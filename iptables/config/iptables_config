@@ -1,0 +1,51 @@
+[chain-rules]
+# strict rules:
+input_policy=DROP
+forward_policy=DROP
+output_policy=ACCEPT
+service_state=running
+system_enabled=true
+
+# even if values are absent from iptables runtime config, check returns will be "OK".
+# Syntax: allowed_input{PROTO}_{PORT}_ips=[{IP1},{IP2},{IPn}]
+[general-input-rules]
+allowed_input_tcp_22_ips=192.168.11.12,192.168.5.6
+allowed_input_tcp_6556_ips=192.168.42.235
+allowed_input_tcp_any_ips=192.168.11.12
+allowed_input_any_any_ips=10.20.30.40
+# webmin access
+allowed_input_tcp_10000_ips=192.168.11.12
+
+
+# host based execption policy: eg ssh access allowed to this specific host from another host and not defined in  [general-input-rules]
+# syntax: [<HOST_IP>]
+
+
+# this is example
+
+[192.168.5.21]
+# allow webmin user1
+allowed_input_tcp_1000_ips=10.94.1.4,10.94.7.14,192.168.7.92
+
+
+# this is example
+
+[192.168.5.21]
+# allow webmin dns1 to update bind.
+allowed_input_tcp_1000_ips=192.168.5.21
+
+
+
+# this is example:
+
+[192.168.37.101]
+# allow proxy-mgmt.nika.ge - ansible 
+allowed_input_tcp_22_ips=192.168.7.2
+
+[192.168.37.102]
+# allow proxy-mgmt.nika.ge - ansible 
+allowed_input_tcp_22_ips=192.168.7.2
+
+[192.168.37.103]
+# allow proxy-mgmt.nika.ge - ansible 
+allowed_input_tcp_22_ips=192.168.7.2

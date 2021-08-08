@@ -1,0 +1,11 @@
+module checkmk-agent-bakery-module 1.0;
+
+require {
+        type rpm_script_t;
+        type inetd_child_t;
+        class process transition;
+}
+
+
+#============= inetd_child_t ==============
+allow inetd_child_t rpm_script_t:process transition;

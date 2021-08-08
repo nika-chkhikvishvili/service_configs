@@ -1,6 +1,9 @@
 # Linux service config templates for compliance checkup
 ### services like: SSH, HTTPD, Postfix, etc..
 
+# High Level Architecture:
+
+![Alt text](images/service_configs.png?raw=true "HLA")
 
 
 

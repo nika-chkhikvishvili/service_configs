@@ -3,7 +3,7 @@
 
 # High Level Architecture:
 
-![Alt text](images/service_configs_2.png?raw=true "HLA")
+![Alt text](images/service_configs_3.png?raw=true "HLA")
 
 
 

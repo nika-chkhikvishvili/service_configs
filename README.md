@@ -84,9 +84,9 @@ add following line in **/etc/crontab** to pull changes from git autoomatically t
 ### iptables is not compliant
 ![Alt text](images/iptables-error.png?raw=true "iptables OK")
 ### iptables & sshd is compliant
-![Alt text](images/services-ok?raw=true "iptables & sshd  OK")
+![Alt text](images/services-ok.png?raw=true "iptables & sshd  OK")
 ### sshd is not compliant
-![Alt text](images/sshd.png?raw=true "sshd ERR")
+![Alt text](images/sshd-err.png?raw=true "sshd ERR")
 
 
 

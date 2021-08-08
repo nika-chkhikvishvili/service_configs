@@ -78,6 +78,15 @@ add following line in **/etc/crontab** to pull changes from git autoomatically t
   3. compare extracetd ip to template ip[s].
   4. is mismatch trow error.
 
+# Examples in checkmk:
+### iptables is  compliant
+![Alt text](images/iptables-ok.png?raw=true "iptables OK")
+### iptables is not compliant
+![Alt text](images/iptables-error.png?raw=true "iptables OK")
+### iptables & sshd is compliant
+![Alt text](images/services-ok.png?raw=true "iptables & sshd  OK")
+### sshd is not compliant
+![Alt text](images/sshd-err.png?raw=true "sshd ERR")
 
 
 
